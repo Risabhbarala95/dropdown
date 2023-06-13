@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: red;
+    align-items: center;
+}
+header h1{
+    color: white;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+}
+.submenu{
+    background-color: azure;
+    position: absolute;
+    flex-direction: column;
+    
+}
+.submenu a{
+    color: black;
+   
+
+}
+.submenu li{
+    border-bottom:2px solid;
+}
+header li:hover .submenu{
+    display: flex !important;
+}
+
+  header .submenu{
+    position: absolute;
+    flex-direction: column;
+    background-color: #af6363;
+    width: 120px;
+    top: 50px;
+    display: none !important;
+  }
+
+  .submenu2{
+     display:flex;
+     flex-direction:column;
+     position:absolute;
+     top:0px;
+     right: 120px;
+     background-color:aquamarine;
+     width:120px;
+     display:none;
+     
+  }
+  .submenu2 a:hover{
+    background-color:antiquewhite;
+    width:100%;
+    
+  }
+  .submenu :hover .submenu2{
+    display:block;!important
+  }
+  .submenu3{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #af6363;
+    right: 120px;
+    width: 120px;
+    top: 0px; display: none;
+  }
+  .submenu2 :hover .submenu3{
+    display: block; !important
+  }
+  .submenu3 a:hover{
+    background-color: blueviolet;
+  }
